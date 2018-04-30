@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="menu_item_press">#2e000000</color>
+      <color name="page_backgroup">#f2f2f2</color>
+   <!-- 灰色 -->
+    <color name="grey_color1">#333333</color>
+    <color name="color_2">#2a4253</color>
+    <color name="grey_color3">#999999</color>
+    <color name="grey_color2">#666666</color>
+     <!-- 橙色 -->
+    <color name="orange_color">#de6838</color>
+    <color name="gray">#666</color>
+    <color name="gray1">#1a1a1a</color>
+    <color name="red">#f00</color>
+    <color name="org">#E84F38</color>
+    
+</resources>

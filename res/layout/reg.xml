@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.testimageclient.MainActivity" >
+    
+       <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/topbar_background"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal" >
+           
+           <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="45dp"
+                android:text="返回"
+                android:textColor="#1a1a1a"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="45dp"
+                android:text="注册"
+                android:textColor="#1a1a1a"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+       
+      <EditText 
+          android:id="@+id/reg_uname"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:hint="用户名"
+          android:inputType="text"
+          android:singleLine="true"
+       />
+      
+      <EditText 
+          android:id="@+id/reg_upsd"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:hint="密码"
+          android:password="true"
+          android:inputType="text"
+          android:singleLine="true"/>
+      <EditText 
+          android:id="@+id/reg_upsd1"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:hint="确认密码"
+          android:password="true"
+          android:inputType="text"
+          android:singleLine="true"/>
+
+     <Button 
+          android:layout_marginTop="25dp"
+          android:id="@+id/regbtn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@drawable/btn_login_selector"
+          android:enabled="true"
+          android:text="注册" /> 
+</LinearLayout>

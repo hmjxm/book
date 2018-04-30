@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" 
+    android:orientation="vertical">
+    
+    <LinearLayout 
+    android:id="@+id/ll_orderid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+          android:textColor="#1a1a1a"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="订单编号:" 
+          android:textSize="17sp"/>
+    <TextView
+          android:id="@+id/orderid"
+          android:textColor="#1a1a1a"
+          android:textSize="17sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <com.example.testimageclient.ChildLiistView
+        android:id="@+id/listview8"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="#000000"
+        android:scrollbars="none"
+        android:focusable="false" 
+        android:clickable="false">
+    </com.example.testimageclient.ChildLiistView>
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="280dp"
+    android:orientation="horizontal">
+     <TextView
+          android:textColor="#000"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="合计:" />
+     <TextView
+          android:id="@+id/allprice"
+          android:textColor="#000"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    
+     <TextView
+         android:id="@+id/delorder"
+          android:textColor="#000"
+          android:layout_marginLeft="280dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="[删除订单]" />
+</LinearLayout>

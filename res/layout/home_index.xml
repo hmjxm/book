@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.testimageclient.MainActivity" >
+
+    <LinearLayout
+	android:layout_width="0dip"
+	android:layout_height="0dip"
+	android:focusable="true"
+	android:focusableInTouchMode="true" />
+    <LinearLayout 
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.example.testimageclient.lineEditText 
+          android:id="@+id/et_bkey"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:layout_marginLeft="10dp"
+          android:inputType="text"
+          android:hint="请输入关键词"
+          android:background="@null"
+    />
+     <Button 
+          android:id="@+id/search_btn"
+          android:layout_width="60dp"
+          android:layout_height="35dp"
+          android:background="@drawable/btn_login_selector"
+          android:enabled="true"
+          android:text="搜索"
+          android:textColor="#fff" />    
+    </LinearLayout>
+    <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_product"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="转让书籍"
+                android:textColor="@drawable/tab_product_textcolor"
+                android:textSize="18sp" />
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_product"
+                android:button="@null"
+                android:gravity="center"
+                android:text="赠送书籍"
+                android:textColor="@drawable/tab_product_textcolor" 
+                android:textSize="18sp"/>
+    </RadioGroup>  
+    
+       <ListView
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="5dp"
+         android:background="#ffffff"
+         android:id="@+id/listview2"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scrollbars="none"
+         android:cacheColorHint="#000000"
+         android:divider="#e8e8e8"
+         android:dividerHeight="5dp">
+
+     </ListView>
+     
+                   
+</LinearLayout>
